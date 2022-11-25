@@ -2,36 +2,41 @@ Nuestra API REST nos permite modular un ecommerce que cuenta con una variada can
 Entre las consultas que podemos realizar se encuentran por ejemplo:
 
 ## Saber los productos disponibles en la tienda  
-//http://localhost:3000/app/consultas/obtener_dos
+http://localhost:3000/app/consultas/obtener_dos
 
 
 ## Número de productos por categoria  
-//http://localhost:3000/app/consultas/obtener_tres
+http://localhost:3000/app/consultas/obtener_tres
+
+
 
 ## Producto disponible en un rango de precios 
-//http://localhost:3000/app/consultas/obtener_cuatro
+http://localhost:3000/app/consultas/obtener_cuatro
+
 
 ## Insertar, actualizar y eliminar categorias de productos
-// http://localhost:3000/app/crud/insertar_categoria
+http://localhost:3000/app/crud/insertar_categoria
 
-// http://localhost:3000/app/crud/actualizar_categoria
+http://localhost:3000/app/crud/actualizar_categoria
 
-// http://localhost:3000/app/crud/eliminar_categoria/id
+http://localhost:3000/app/crud/eliminar_categoria/id
+
 
 
 ## Login y Logout
-//http://localhost:3000/app/cliente/login/email&contrasena
+http://localhost:3000/app/cliente/login/email&contrasena
 
-//http://localhost:3000/app/cliente/logout/id_cliente
+http://localhost:3000/app/cliente/logout/id_cliente
 
 
 
 ## Crear un carrito de compras
-// http://localhost:3000/app/carrito/crear_carrito/:id_cliente
+http://localhost:3000/app/carrito/crear_carrito/:id_cliente
 
 
-##El precio total de los prodcutos en un carrito
-//http://localhost:3000/app/consultas/obtener_seis/:id_carrito_cliente
+
+## El precio total de los prodcutos en un carrito
+http://localhost:3000/app/consultas/obtener_seis/:id_carrito_cliente
 
 
 Entre otras muchas otras funciones.
