@@ -286,6 +286,17 @@ module.exports = {
     },
 
 
+    obtenerCarritoCliente() {
+        return new Promise((resolve, reject) => {
+            conexion.query(`select * from carrito_cliente`,
+                (err, resultados) => {
+                    if (err) reject(err);
+                    else resolve(resultados);
+                });
+        });
+    },
+
+
     //---------------------------------- Operaciones sobre el Usuario/Cliente ---------------------------------
 
     login(email, contrasena) {

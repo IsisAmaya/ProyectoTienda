@@ -253,12 +253,22 @@ router.get("/carrito/consultar_carrito/:id_carrito_cliente", async (req, res) =>
   }
 });
 
-// consultar ordenes
+
 //http://localhost:3000/app/carrito/consultar_orden/:id_cliente
 router.get("/carrito/consultar_orden/:id_cliente", async (req, res) => {
   try {
     const productos = await productoModel.obtenerOrden(req.params.id_cliente);
     res.send(productos);
+  } catch (error) {
+    response.status(500).send(error);
+  }
+});
+
+//http://localhost:3000/app/carrito/obtener_carrito_cliente
+router.get("/carrito/obtener_carrito_cliente", async (req, res) => {
+  try {
+    const resultado = await productoModel.obtenerCarritoCliente();
+    res.send(resultado);
   } catch (error) {
     response.status(500).send(error);
   }
