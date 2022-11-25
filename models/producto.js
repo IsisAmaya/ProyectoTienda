@@ -19,7 +19,7 @@ module.exports = {
     //Consulta 2
     obtenerDos() {
         return new Promise((resolve, reject) => {
-            conexion.query(`select nombre, descripcion, stock from producto where stock > 1;`,
+            conexion.query(`select nombre, descripcion, stock from producto where stock > 1`,
                 (err, resultados) => {
                     if (err) reject(err);
                     else resolve(resultados);

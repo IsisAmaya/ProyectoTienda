@@ -20,7 +20,7 @@ router.get("/consultas/obtener_uno", async (req, res) => {
 });
 
 
-//http://localhost:3000/app/carrito/obtener_dos
+//http://localhost:3000/app/consultas/obtener_dos
 router.get("/consultas/obtener_dos", async (req, res) => {
   try {
     const productos = await productoModel.obtenerDos();
